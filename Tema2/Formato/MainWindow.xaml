@@ -1,0 +1,21 @@
+﻿<Window x:Class="Formato.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Formato"
+        mc:Ignorable="d"
+        Title="FormatoTexto" Height="450" Width="800" Icon="FormatoTexto.png">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="69,92,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="64" Height="16" Text="Texto"/>
+        <TextBlock x:Name="salidaTextBlock" HorizontalAlignment="Left" Margin="114,276,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="554" Height="46" TextAlignment="Center" Background="#FFEAF1AD" FontSize="24" />
+        <TextBox x:Name="entradaTextBox" HorizontalAlignment="Left" Height="105" Margin="69,113,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="169"/>
+        <RadioButton x:Name="azulRadioButton" Content="Azul" HorizontalAlignment="Left" Margin="608,93,0,0" VerticalAlignment="Top" Checked="azulRadioButton_Checked" GroupName="colores" />
+        <RadioButton x:Name="rojoRadioButton" Content="Rojo" HorizontalAlignment="Left" Margin="608,113,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.474,1.94" Checked="rojoRadioButton_Checked" GroupName="colores" />
+        <RadioButton x:Name="verdeRadioButton" Content="Verde" HorizontalAlignment="Left" Margin="608,133,0,0" VerticalAlignment="Top" Checked="verdeRadioButton_Checked" GroupName="colores"/>
+        <TextBlock HorizontalAlignment="Left" Margin="507,113,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="86" Height="15"><Run Text="Color de texto"/><LineBreak/><Run/></TextBlock>
+        <CheckBox x:Name="negritaCheckBox" Content="Negrita" HorizontalAlignment="Left" Margin="275,113,0,0" VerticalAlignment="Top" FontWeight="Bold" Width="79" Checked="negritaCheckBox_Checked"/>
+        <CheckBox x:Name="cursibaCheckBox" Content="Cursiva" HorizontalAlignment="Left" Margin="378,113,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.832,0.359" FontStyle="Italic" Width="74" Checked="cursibaCheckBox_Checked"/>
+
+    </Grid>
+</Window>

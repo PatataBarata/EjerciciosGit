@@ -1,0 +1,25 @@
+﻿<Window x:Class="ElTamañoImport.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ElTamañoImport"
+        mc:Ignorable="d"
+        Title="CambioDeFuente" Height="432.803" Width="994.904" Icon="FormatoTexto.png">
+    <Grid>
+        <RadioButton Checked="RadioButton_Checked" Tag="PequeñoRadioButton" Content="Pequeño" HorizontalAlignment="Left" Margin="126,290,0,0" VerticalAlignment="Top" Height="47" Width="169" FontSize="36" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+        <RadioButton Checked="RadioButton_Checked" Tag="MedianoRadioButton" Content="Mediano" HorizontalAlignment="Left" Margin="403,290,0,0" VerticalAlignment="Top" Height="47" Width="177" FontSize="36" HorizontalContentAlignment="Center" Padding="4,-1,0,0" VerticalContentAlignment="Center" BorderThickness="1"/>
+        <RadioButton Checked="RadioButton_Checked" Tag="GrandeRadioButton" Content="Grande" Margin="703,290,0,0" Height="47" Width="158" FontSize="36" HorizontalAlignment="Left" VerticalAlignment="Top" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" BorderThickness="1" Padding="4,-1,0,0" />
+        <TextBlock x:Name="textoaCambiarTextBock" HorizontalAlignment="Left" Margin="111,86,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="153" Width="786" TextAlignment="Center" FontSize="36" FontWeight="ExtraBold" Foreground="#FF5A8CF0" FontFamily="Segoe UI Black">
+            <TextBlock.Effect>
+                <DropShadowEffect
+      ShadowDepth="5"
+      Direction="666"
+      Color="Black"
+      Opacity="1"
+     BlurRadius="4"/>
+            </TextBlock.Effect><Run Text="Desarrollo de "/><Run Text="Interfaces"/></TextBlock>
+        <RadioButton Content="RadioButton" HorizontalAlignment="Left" Margin="547,-50,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
