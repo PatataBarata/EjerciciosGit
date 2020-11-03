@@ -24,5 +24,10 @@ namespace _5.Calculadora
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            numeros.Text += (sender as Button).Tag.ToString();
+        }
     }
 }

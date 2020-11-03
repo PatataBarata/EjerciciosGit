@@ -5,42 +5,54 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_5.Calculadora"
         mc:Ignorable="d"
-        Title="Calculadora" Height="450" Width="800">
-    <Grid Margin="10">
+        Title="Calculadora" Height="450" Width="800" MinWidth="250" MinHeight="350">
+
+    
+        <Grid Margin="10">
         
         <Grid.RowDefinitions>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
+            <RowDefinition Height="2*"></RowDefinition>
+            <RowDefinition Height="3*"></RowDefinition>
+            <RowDefinition Height="48"></RowDefinition>
 
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
+            
         </Grid.ColumnDefinitions>
-        <TextBlock  Grid.Row="0" Margin="5" Grid.RowSpan="4" Grid.ColumnSpan="3"></TextBlock>
-        <Button Margin="5" Grid.Row="4" Grid.RowSpan="2">1</Button>
-        <Button Margin="5" Grid.Row="6" Grid.RowSpan="2">4</Button>
-        <Button Margin="5" Grid.Row="8" Grid.RowSpan="2">7</Button>
-        <Button Margin="5" Grid.Row="4" Grid.Column="1" Grid.RowSpan="2" >2</Button>
-        <Button Margin="5" Grid.Row="6" Grid.Column="1" Grid.RowSpan="2">5</Button>
-        <Button Margin="5" Grid.Row="8" Grid.Column="1" Grid.RowSpan="2">8</Button>
-        <Button Margin="5" Grid.Row="4" Grid.Column="2" Grid.RowSpan="2">3</Button>
-        <Button Margin="5" Grid.Row="6" Grid.Column="2" Grid.RowSpan="2">6</Button>
-        <Button Margin="5" Grid.Row="8" Grid.Column="2" Grid.RowSpan="2">9</Button>
-        <Button Margin="5" Grid.Row="10" Grid.ColumnSpan="3" >0</Button>
+        
+            <Border BorderThickness="1" BorderBrush="Black"  Margin="5" >
+            <Viewbox>
+                <TextBox x:Name="numeros" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBox>
+            
+                </Viewbox>
+        </Border>
+      
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition ></RowDefinition>
+                <RowDefinition ></RowDefinition>
+                <RowDefinition ></RowDefinition>
 
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
 
+            <Button Click="Button_Click" Tag="1" Margin="5" Grid.Row="0">1</Button>
+            <Button Click="Button_Click" Tag="4" Margin="5" Grid.Row="1" >4</Button>
+            <Button Click="Button_Click" Tag="7" Margin="5" Grid.Row="2" >7</Button>
+            <Button Click="Button_Click" Tag="2" Margin="5" Grid.Row="0" Grid.Column="1" >2</Button>
+            <Button Click="Button_Click" Tag="5" Margin="5" Grid.Row="1" Grid.Column="1" >5</Button>
+            <Button Click="Button_Click" Tag="8" Margin="5" Grid.Row="2" Grid.Column="1" >8</Button>
+            <Button Click="Button_Click" Tag="3" Margin="5" Grid.Row="0" Grid.Column="2" >3</Button>
+            <Button Click="Button_Click" Tag="6" Margin="5" Grid.Row="1" Grid.Column="2" >6</Button>
+            <Button Click="Button_Click" Tag="9" Margin="5" Grid.Row="2" Grid.Column="2" >9</Button>
+        </Grid>
+        <Button Click="Button_Click" Tag="0" Margin="5" Grid.Row="10" Grid.ColumnSpan="3" >0</Button>
+     
 
     </Grid>
+  
 </Window>
