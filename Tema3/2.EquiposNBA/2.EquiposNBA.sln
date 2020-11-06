@@ -5,6 +5,11 @@ VisualStudioVersion = 16.0.30225.117
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.EquiposNBA", "2.EquiposNBA.csproj", "{07266237-BBB7-416C-8C70-59C3CD478810}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5B806C59-4A71-4DA6-BB24-E4AC0E607792}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\..\..\..\Descargas\64.ico = ..\..\..\..\..\..\Descargas\64.ico
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

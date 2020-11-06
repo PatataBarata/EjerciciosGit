@@ -5,9 +5,32 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_2.EquiposNBA"
         mc:Ignorable="d"
-        Title="Equipos NBA" Height="450" Width="800">
+        Title="Equipos NBA" Height="450" Width="800"
+        Icon="64.ico">
+    <Window.Resources>
+        <Style TargetType="Image">
+            <Setter Property="Width" Value="140"></Setter>
+        </Style>
+        <Style TargetType="TextBlock">
+            <Setter Property="Margin" Value="5"></Setter>
+            <Setter Property="FontSize" Value="30"></Setter>
+            <Setter Property="FontWeight" Value="Bold"></Setter>
+        </Style>
+        <Style TargetType="{x:Type Border}" >
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="BorderBrush" Value="Black"/>
+            <Setter Property="CornerRadius" Value="5"/>
+            <Setter Property="BorderThickness" Value="3"/>
+        </Style>
+        <Style TargetType="{x:Type WrapPanel}">
+            <Setter Property="HorizontalAlignment" Value="Center"></Setter>
+            <Setter Property="Orientation" Value="Horizontal"></Setter>
+            
+        </Style>
+
+    </Window.Resources>
     <StackPanel>
-        <Border Margin="5" BorderBrush="Black" BorderThickness="3" CornerRadius="5">
+        <Border >
 
             <StackPanel >
                 <StackPanel.Background>
@@ -17,23 +40,23 @@
                     </LinearGradientBrush>
                 </StackPanel.Background>
 
-                <WrapPanel HorizontalAlignment="Center">
+                <WrapPanel >
                     
-                <TextBlock  Margin="5" FontSize="30" FontWeight="Bold" > Los Ángeles Lakers</TextBlock>
+                <TextBlock> Los Ángeles Lakers</TextBlock>
                 </WrapPanel>
-                <WrapPanel HorizontalAlignment="Center" Orientation="Horizontal">
+                <WrapPanel >
 
-                    <Image Source="23_lakers.png" Width="140"></Image>
-                    <Image Source="14_lakers.png" Width="140"></Image>
-                    <Image Source="3_lakers.png" Width="140"></Image>
-                    <Image Source="39_lakers.png" Width="140"></Image>
-                    <Image Source="9_lakers.png" Width="140"></Image>
+                    <Image Source="23_lakers.png" ></Image>
+                    <Image Source="14_lakers.png" ></Image>
+                    <Image Source="3_lakers.png" ></Image>
+                    <Image Source="39_lakers.png" ></Image>
+                    <Image Source="9_lakers.png" ></Image>
 
                     <StackPanel></StackPanel>
                 </WrapPanel>
             </StackPanel>
         </Border>
-        <Border Margin="5" BorderBrush="Black" BorderThickness="3" CornerRadius="5" >
+        <Border  >
         <StackPanel>
                 <StackPanel.Background>
                     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -42,14 +65,14 @@
                     </LinearGradientBrush>
                 </StackPanel.Background>
 
-                <TextBlock Margin="5" FontSize="30" FontWeight="Bold" HorizontalAlignment="Center" Foreground="#FFFBFBFB">Miami Heat</TextBlock>
+                <TextBlock  HorizontalAlignment="Center" Foreground="#FFFBFBFB">Miami Heat</TextBlock>
            
-            <WrapPanel HorizontalAlignment="Center"  Orientation="Horizontal">
-                <Image Source="13_heat.png" Width="140"></Image>
-                <Image Source="14_heat.png" Width="140"></Image>
-                <Image Source="22_heat.png" Width="140"></Image>
-                <Image Source="7_heat.png" Width="140"></Image>
-                <Image Source="99_heat.png" Width="140"></Image>
+            <WrapPanel >
+                <Image Source="13_heat.png" ></Image>
+                <Image Source="14_heat.png" ></Image>
+                <Image Source="22_heat.png" ></Image>
+                <Image Source="7_heat.png" ></Image>
+                <Image Source="99_heat.png" ></Image>
    
             </WrapPanel>
         </StackPanel>
